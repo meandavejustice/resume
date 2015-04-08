@@ -1,0 +1,173 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{wasysym}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large David Justice}  & 434 944 1440\\
+1726 SE Division Street & davejustishh-at-gmail.com \\
+Portland, OR & http://www.davejustice.com\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Freelance Development}{Portland, Oregon}{Software Engineer}{March 2014 - Present}
+	\begin{itemize}
+		\resitem{Led multiple teams in engineering fresh and legacy projects.}
+		\resitem{Implemented an interactive SVG interface representative of complex medical data.}
+	\end{itemize}
+
+\item 
+	\ressubheading{Quick Left}{Portland, OR}{Software Engineer}{January 2014 - February 2014}
+	\begin{itemize}
+		\resitem{Assisted in the onboarding of Quick Left engineers in the the Sprint.ly project after the merger.}
+	\end{itemize}
+
+\item
+	\ressubheading{Sprint.ly}{Portland, OR}{Software Engineer}{January 2013 - January 2014}
+	\begin{itemize}
+		\resitem{Implemented the popular list view.}
+		\resitem{Improved Test Coverage from below 1 percent up to well over 50 percent.}
+    \resitem{Managed major refactors of the Front End.}
+    \resitem{Made large performance improvements in rendering on the front end.}
+	\end{itemize}
+
+\item
+	\ressubheading{Glider}{Portland, OR}{Software Engineer}{January 2013 - March 2013}
+	\begin{itemize}
+		\resitem{Worked on a small team to rapidly build out an alpha release for TechCrunch Disrupt}
+    \resitem{Helped to stabilize product.}
+		\resitem{Assisted in finding full-time employees to carry on development.}
+    \resitem{Implemented interactive signing of documents with canvas API}
+    \resitem{Acquired one year later by FPX}
+	\end{itemize}
+
+\item
+	\ressubheading{Tixie}{Portland, OR}{Front End Developer}{September 2012 - January 2013}
+	\begin{itemize}
+		\resitem{Implement full site redesign.}
+	\end{itemize}
+
+\item
+	\ressubheading{Outthink Group}{Lynchburg, VA}{Web Developer}{September 2011 -  2012}
+	\begin{itemize}
+		\resitem{Implement full site redesign.}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Open Source Projects}
+\begin{itemize}
+\item
+	\ressubheading{Meta-staseis}{}{http://edit.cassettetap.es}{started 2014}
+	\begin{itemize}
+		\resitem{Editing Audio Files in a Browser}
+    \resitem{Client Side manipulation of audio data in a web worker.}
+    \resitem{Supports Copy, Cut, Paste, reverse, merging}
+    \resitem{Exporting as a WAV file}
+	\end{itemize}
+
+\item
+	\ressubheading{NPR Streams}{}{http://npr-streams.com}{started 2014}
+	\begin{itemize}
+		\resitem{Parsing of 22,000 line xml file of all npr stations.}
+    \resitem{Created easy to navigate and fully documented API}
+	\end{itemize}
+
+\item
+	\ressubheading{4minutesand33seconds}{}{http://4minutesand33seconds.com}{started 2014}
+	\begin{itemize}
+    \resitem{Recording and real-time audio visualization in browser with WebAudio and WebWorkerAPI.}
+		\resitem{Bulk uploads to Amazon s3.}
+	\end{itemize}
+
+\item
+	\ressubheading{Revisit.link}{}{http://revisit.link}{2014}
+	\begin{itemize}
+    \resitem{Project for mapping together microservices for image manipulation.}
+		\resitem{Collaborated with the creator of chat.meatspac.es and Big Boring System.}
+	\end{itemize}
+
+\item
+	\ressubheading{Small Modules on NPM}{}{https://www.npmjs.com/\~{}meandave}{2012 - current}
+	\begin{itemize}
+    \resitem{general utilities}
+    \resitem{Command Line utilities}
+    \resitem{Canvas API Helpers}
+    \resitem{WebAudio API Libraries}
+    \resitem{Developer Tools}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+JavaScript, \LaTeX, C/C++, Markdown
+\item[Operating Systems:]
+Linux, UNIX, MacOSX, Windows
+\item[Applications:]
+GIMP \& Photoshop, GNU Plot, \LaTeX, InDesign, Emacs, Illustrator, InkScape, Audacity
+\item[Miscellaneous:]
+strong verbal and written communication skills, excellent troubleshooting and debugging skills, exceptional problem solving skills, good teams skills
+\end{description}
+
+\resheading{Interests}
+
+\begin{description}
+\item[Computers:] Maintain a plethora of open source packages, mostly on packages published to NPM. Highly proficient in Linux and other UNIX derived systems. Studying Digital Signal Processing.
+\item[Musical: \eighthnote] Playing piano \& creating instruments. Running a small independent cassette label.
+\item[Musical continued: \eighthnote] Running a small independent cassette label.
+\item[Outdoors:] Bicycles, camping, traveling.
+\item[Other:] Reading about philosophy, mathematics, music theory, history of computing.
+\end{description}
+
+\end{document}
